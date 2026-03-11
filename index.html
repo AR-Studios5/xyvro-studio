@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Xyvro Entertainment | Official Studio Site</title>
+    <meta name="title" content="Xyvro Entertainment | Official Studio Site">
+    <meta name="description" content="Official website of Xyvro Entertainment, founded by Aryan Pandey. Creators of 'The Lost Signal'. Specializing in high-fidelity mascot horror.">
+    <meta name="keywords" content="Xyvro Entertainment, Aryan Pandey, The Lost Signal, Horror Game Studio, Mascot Horror, Indie Games India">
+    <meta name="author" content="Aryan Pandey">
+    <link rel="canonical" href="https://xyvro.vercel.app/">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Xyvro Entertainment",
+      "alternateName": "Xyvro",
+      "url": "https://xyvro.vercel.app/",
+      "logo": "https://i.ibb.co/Xf7Yq0S8/Gemini-Generated-Image-s6g61ss6g61ss6g6-1.jpg",
+      "founder": {
+        "@type": "Person",
+        "name": "Aryan Pandey"
+      },
+      "sameAs": [
+        "https://www.youtube.com/@xyvro_entertainment",
+        "https://x.com/wager81039"
+      ],
+      "description": "A premier digital studio specializing in psychological and mascot horror games."
+    }
+    </script>
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22black%22/><text y=%22.9em%22 x=%225%22 font-family=%22sans-serif%22 font-weight=%22bold%22 font-size=%2270%22 fill=%22%23ce1212%22>XY</text></svg>">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Inter:wght@300;400;700&display=swap');
+
+        :root {
+            --primary-red: #ce1212;
+            --dark-bg: #0a0a0a;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: var(--dark-bg);
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .title-font { font-family: 'Syncopate', sans-serif; }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0; width: 100%; z-index: 50;
+            padding: 1.5rem;
+            display: flex; justify-content: space-between; align-items: center;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0) 100%);
+            transition: all 0.4s ease;
+        }
+
+        nav.scrolled {
+            background: rgba(0,0,0,0.95);
+            backdrop-filter: blur(15px);
+            padding: 1rem 1.5rem;
+        }
+
+        /* Hero / Banner Section */
+        .hero-section {
+            height: 100vh;
+            display: flex; align-items: center;
+            padding: 0 10%;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(10,10,10,1)), 
+                        url('https://pin.it/4SmkzyyZF');
+            background-size: cover; 
+            background-position: center;
+        }
+
+        .status-tag { color: var(--primary-red); letter-spacing: 0.5em; font-size: 0.75rem; font-weight: bold; text-transform: uppercase; margin-bottom: 1rem; }
+        .hero-title { font-size: clamp(3rem, 8vw, 6rem); font-weight: bold; letter-spacing: -0.05em; line-height: 1.1; margin-bottom: 1.5rem; }
+        .hero-desc { color: #ccc; max-width: 32rem; margin-bottom: 2.5rem; font-size: 0.875rem; line-height: 1.6; }
+
+        /* Buttons */
+        .btn-red { background: var(--primary-red); color: white; padding: 1rem 2rem; font-weight: bold; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.1em; box-shadow: 0 0 20px rgba(206, 18, 18, 0.4); transition: 0.3s; cursor: pointer; display: inline-block; }
+        .btn-red:hover { background: white; color: black; transform: scale(1.05); }
+
+        /* Background Grid */
+        .grid-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-image: linear-gradient(rgba(255,255,255,0.01) 60px, transparent 60px), linear-gradient(90deg, rgba(255,255,255,0.01) 60px, transparent 60px); background-size: 60px 60px; z-index: -1; }
+        
+        /* Cards */
+        .glass-card { background: rgba(255,255,255,0.02); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.05); transition: 0.4s; }
+        .card-image-container { position: relative; height: 18rem; background: #18181b; margin-bottom: 1.5rem; overflow: hidden; }
+        .card-img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%); transition: 0.7s; }
+        .glass-card:hover .card-img { filter: grayscale(0%); transform: scale(1.1); }
+
+        /* CEO Box */
+        .ceo-box { padding: 1.5rem; border-left: 2px solid var(--primary-red); background: rgba(255,255,255,0.05); }
+    </style>
+</head>
+<body>
+
+    <div class="grid-bg"></div>
+
+    <nav id="navbar">
+        <div class="title-font font-bold text-xl tracking-tighter uppercase">
+            XYVRO <span class="text-red-600">ENTERTAINMENT</span>
+        </div>
+        <div class="space-x-8 text-[10px] uppercase tracking-widest font-bold hidden md:block">
+            <a href="#home" class="hover:text-red-600 transition">Home</a>
+            <a href="#projects" class="hover:text-red-600 transition">Our Games</a>
+            <a href="#studio" class="hover:text-red-600 transition">The Studio</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div data-aos="fade-up" data-aos-duration="1200">
+            <h4 class="status-tag">System Active</h4>
+            <h1 class="title-font hero-title">
+                THE LOST <br> <span class="text-red-600">SIGNAL</span>
+            </h1>
+            <p class="hero-desc">
+                Step into the silence of Chapter 1. Discover the mystery behind the school's broadcast in our latest survival horror experience.
+            </p>
+            <div class="flex gap-4">
+                <a href="https://www.youtube.com/@xyvro_entertainment" target="_blank" class="btn-red">Watch Teaser</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-32 px-6 max-w-7xl mx-auto">
+        <h2 class="title-font text-3xl md:text-5xl font-bold uppercase mb-16" data-aos="fade-right">Production Files</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="glass-card p-6 rounded-sm group" data-aos="fade-up">
+                <div class="card-image-container">
+                    <img src="https://pin.it/4SmkzyyZF" alt="The Lost Signal Chapter 1" class="card-img">
+                </div>
+                <h3 class="title-font text-2xl mb-2 uppercase">The School</h3>
+                <p class="text-zinc-400 text-sm mb-6">Survival is the only objective when the transmission takes hold of Northwood High.</p>
+                <a href="https://www.youtube.com/@xyvro_entertainment" target="_blank" class="text-red-600 font-bold uppercase text-xs">Access File →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="studio" class="py-32 bg-[#080808]">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="title-font text-3xl font-bold mb-6 uppercase">The <span class="text-red-600 text-4xl block">Executive</span></h2>
+                    <p class="text-zinc-400 mb-6">Xyvro Entertainment is a premier digital studio specializing in psychological horror. Founded by Aryan Pandey.</p>
+                    <div class="ceo-box">
+                        <p class="title-font text-lg">Aryan Pandey</p>
+                        <p class="text-red-600 text-xs font-bold uppercase tracking-widest">CEO & Founder</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-16 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div>
+                <p class="title-font font-bold text-sm uppercase">Xyvro Entertainment</p>
+                <p class="text-zinc-600 text-[10px] uppercase font-bold mt-2">©2026. All Rights Reserved</p>
+            </div>
+            <div class="flex gap-10">
+                <a href="https://www.youtube.com/@xyvro_entertainment" target="_blank" class="text-zinc-500 hover:text-red-600 text-2xl"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://x.com/wager81039" target="_blank" class="text-zinc-500 hover:text-red-600 text-2xl"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) nav.classList.add('scrolled');
+            else nav.classList.remove('scrolled');
+        });
+    </script>
+</body>
+</html>

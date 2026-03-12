@@ -7,7 +7,7 @@
     <link rel="icon" type="image/jpeg" href="https://i.ibb.co/27MM7b66/Gemini-Generated-Image-s6g61ss6g61ss6g6-1.jpg">
 
     <title>Xyvro Entertainment | Official Mascot Horror Studio</title>
-    <meta name="description" content="Xyvro Entertainment: Premier developers of 'The Lost Signal'. Specializing in psychological survival and high-fidelity mascot horror.">
+    <meta name="description" content="Official home of Xyvro Entertainment. Creators of high-fidelity psychological horror and the 'The Lost Signal' franchise.">
     <meta name="keywords" content="Xyvro Entertainment, Aryan Pandey, The Lost Signal, Mascot Horror, Indie Game Studio">
 
     <script type="application/ld+json">
@@ -18,7 +18,6 @@
       "url": "https://xyvroentertainment.vercel.app/",
       "logo": "https://i.ibb.co/27MM7b66/Gemini-Generated-Image-s6g61ss6g61ss6g6-1.jpg",
       "founder": "Aryan Pandey",
-      "description": "A high-fidelity digital production studio focused on mascot horror and psychological survival experiences.",
       "sameAs": [
         "https://www.youtube.com/@xyvro_entertainment",
         "https://x.com/wager81039"
@@ -37,68 +36,102 @@
         .title-font { font-family: 'Syncopate', sans-serif; }
         .hero-banner { 
             background: linear-gradient(rgba(0,0,0,0.85), rgba(5,5,5,1)), url('https://i.ibb.co/Wv01j8Tk/Gemini-Generated-Image-s6g61ss6g61ss6g6-1.jpg'); 
-            background-size: cover; background-position: center; height: 90vh; 
+            background-size: cover; background-position: center; height: 95vh; 
         }
-        .glass-card { background: rgba(255,255,255,0.02); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.05); }
+        .production-card {
+            background: #0a0a0a;
+            border: 1px solid rgba(255,255,255,0.03);
+            transition: 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .production-card:hover {
+            border-color: var(--primary-red);
+            transform: translateY(-10px);
+        }
     </style>
 </head>
 <body>
 
-    <nav class="fixed top-0 w-full z-50 p-6 flex justify-between items-center bg-black/60 backdrop-blur-xl border-b border-white/5">
+    <nav class="fixed top-0 w-full z-50 p-6 flex justify-between items-center bg-black/40 backdrop-blur-2xl border-b border-white/5">
         <div class="flex items-center gap-4">
-            <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-red-600 shadow-[0_0_15px_rgba(206,18,18,0.5)]">
+            <div class="w-11 h-11 rounded-full overflow-hidden border-2 border-red-600 shadow-[0_0_20px_rgba(206,18,18,0.4)]">
                 <img src="https://i.ibb.co/27MM7b66/Gemini-Generated-Image-s6g61ss6g61ss6g6-1.jpg" alt="Xyvro Logo" class="w-full h-full object-cover">
             </div>
-            <div class="title-font font-bold text-xl uppercase tracking-tighter">XYVRO <span class="text-red-600">ENTERTAINMENT</span></div>
+            <div class="title-font font-bold text-lg uppercase tracking-tighter">XYVRO <span class="text-red-600">ENTERTAINMENT</span></div>
         </div>
-        <div class="hidden md:flex gap-10 text-[10px] uppercase tracking-[0.3em] font-bold">
-            <a href="#home" class="hover:text-red-600 transition">Portal</a>
-            <a href="#services" class="hover:text-red-600 transition">Services</a>
-            <a href="#games" class="hover:text-red-600 transition">Production</a>
+        <div class="hidden md:flex gap-10 text-[9px] uppercase tracking-[0.4em] font-bold">
+            <a href="#home" class="hover:text-red-600 transition">Entry</a>
+            <a href="#services" class="hover:text-red-600 transition">Operations</a>
+            <a href="#production" class="hover:text-red-600 transition">Production</a>
         </div>
     </nav>
 
     <section id="home" class="hero-banner flex items-center justify-center text-center px-10">
-        <div data-aos="zoom-out" data-aos-duration="2000">
+        <div data-aos="fade-up" data-aos-duration="2000">
             <h1 class="title-font text-5xl md:text-9xl font-bold uppercase tracking-tighter mb-4">THE SIGNAL</h1>
-            <p class="text-red-600 title-font text-xs tracking-[0.8em] font-bold uppercase mb-12">Chapter One: Deep In The Foundation</p>
-            <a href="#games" class="border border-white/20 px-10 py-4 uppercase text-[10px] tracking-widest hover:bg-white hover:text-black transition duration-500">Explore Production</a>
+            <p class="text-red-600 title-font text-[10px] tracking-[0.8em] font-bold uppercase mb-12">Transmission 01: The Foundation</p>
+            <a href="#production" class="border border-red-600/30 bg-red-600/5 px-12 py-5 uppercase text-[10px] tracking-[0.3em] font-bold hover:bg-red-600 transition duration-500">Access Archive</a>
         </div>
     </section>
 
-    <section id="services" class="py-32 px-6 bg-zinc-950">
+    <section id="production" class="py-32 px-6 bg-black">
         <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-24" data-aos="fade-up">
-                <h2 class="title-font text-4xl uppercase mb-4">Core <span class="text-red-600">Operations</span></h2>
-                <div class="h-1 w-20 bg-red-600 mx-auto"></div>
+            <div class="mb-20" data-aos="fade-right">
+                <h2 class="title-font text-4xl uppercase mb-4">Production <span class="text-red-600">Archive</span></h2>
+                <p class="text-zinc-600 text-xs uppercase tracking-widest font-bold">Current Active IP Development</p>
             </div>
             
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="glass-card p-10 group hover:border-red-600/30 transition duration-500" data-aos="fade-up">
-                    <i class="fa-solid fa-gamepad text-4xl mb-8 text-zinc-600 group-hover:text-red-600 transition"></i>
-                    <h3 class="title-font text-lg mb-4">IP DEVELOPMENT</h3>
-                    <p class="text-zinc-500 text-sm leading-relaxed">Conceptualizing and building original horror universes with deep lore and optimized 3D mechanics.</p>
+            <div class="grid md:grid-cols-1 gap-12">
+                <div class="production-card overflow-hidden group">
+                    <div class="grid md:grid-cols-2">
+                        <div class="relative overflow-hidden h-96 md:h-auto">
+                            <img src="https://i.ibb.co/Wv01j8Tk/Gemini-Generated-Image-s6g61ss6g61ss6g6-1.jpg" alt="The Lost Signal" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-1000 scale-105 group-hover:scale-100">
+                            <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent hidden md:block"></div>
+                        </div>
+                        <div class="p-12 flex flex-col justify-center">
+                            <span class="text-red-600 text-[10px] font-bold tracking-[0.5em] uppercase mb-4">In Development</span>
+                            <h3 class="title-font text-4xl mb-6">THE LOST SIGNAL</h3>
+                            <p class="text-zinc-400 text-sm leading-relaxed mb-8">Northwood High was supposed to be empty. But the signal never stopped. A deep-dive into the school's forgotten foundation reveals a mascot horror experience optimized for peak psychological dread.</p>
+                            <div class="flex gap-6">
+                                <div class="text-center">
+                                    <p class="text-white text-lg font-bold title-font">CH. 1</p>
+                                    <p class="text-zinc-600 text-[9px] uppercase font-bold tracking-widest">The School</p>
+                                </div>
+                                <div class="w-px h-10 bg-white/10"></div>
+                                <div class="text-center">
+                                    <p class="text-white text-lg font-bold title-font">2026</p>
+                                    <p class="text-zinc-600 text-[9px] uppercase font-bold tracking-widest">Broadcast</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="glass-card p-10 group hover:border-red-600/30 transition duration-500" data-aos="fade-up" data-aos-delay="100">
-                    <i class="fa-solid fa-file-audio text-4xl mb-8 text-zinc-600 group-hover:text-red-600 transition"></i>
-                    <h3 class="title-font text-lg mb-4">SOUNDSCAPES</h3>
-                    <p class="text-zinc-500 text-sm leading-relaxed">Atmospheric OST production and sound design engineered to trigger psychological survival responses.</p>
-                </div>
-                <div class="glass-card p-10 group hover:border-red-600/30 transition duration-500" data-aos="fade-up" data-aos-delay="200">
-                    <i class="fa-solid fa-cube text-4xl mb-8 text-zinc-600 group-hover:text-red-600 transition"></i>
-                    <h3 class="title-font text-lg mb-4">3D OPTIMIZATION</h3>
-                    <p class="text-zinc-500 text-sm leading-relaxed">Transforming complex high-poly assets into game-ready environments for low-end to high-end hardware.</p>
-                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-32 px-6 border-t border-white/5 bg-[#080808]">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12">
+            <div class="p-8 border-l border-red-600/20" data-aos="fade-up">
+                <h4 class="title-font text-sm mb-4">IP CREATION</h4>
+                <p class="text-zinc-500 text-xs leading-relaxed">Building sustainable horror franchises from the ground up, focusing on narrative depth and iconic character design.</p>
+            </div>
+            <div class="p-8 border-l border-red-600/20" data-aos="fade-up" data-aos-delay="100">
+                <h4 class="title-font text-sm mb-4">SOUND ARCHITECTURE</h4>
+                <p class="text-zinc-500 text-xs leading-relaxed">Studio-grade audio production designed to create an immersive, high-tension atmosphere for digital media.</p>
+            </div>
+            <div class="p-8 border-l border-red-600/20" data-aos="fade-up" data-aos-delay="200">
+                <h4 class="title-font text-sm mb-4">OPTIMIZED ASSETS</h4>
+                <p class="text-zinc-500 text-xs leading-relaxed">High-performance 3D modeling and animation pipelines designed to run smoothly on diverse hardware configurations.</p>
             </div>
         </div>
     </section>
 
     <footer class="p-20 border-t border-white/5 text-center">
-        <div class="flex justify-center gap-12 mb-10">
-            <a href="https://www.youtube.com/@xyvro_entertainment" class="text-zinc-500 hover:text-red-600 text-2xl"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://x.com/wager81039" class="text-zinc-500 hover:text-red-600 text-2xl"><i class="fa-brands fa-x-twitter"></i></a>
+        <div class="flex justify-center gap-16 mb-12">
+            <a href="https://www.youtube.com/@xyvro_entertainment" class="text-zinc-600 hover:text-red-600 text-3xl transition"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://x.com/wager81039" class="text-zinc-600 hover:text-red-600 text-3xl transition"><i class="fa-brands fa-x-twitter"></i></a>
         </div>
-        <p class="title-font text-[9px] uppercase tracking-[0.6em] text-zinc-700">© 2026 XYVRO ENTERTAINMENT | CREATED BY ARYAN PANDEY</p>
+        <p class="title-font text-[9px] uppercase tracking-[0.8em] text-zinc-800 font-bold">XYVRO ENTERTAINMENT | EXECUTIVE: ARYAN PANDEY</p>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

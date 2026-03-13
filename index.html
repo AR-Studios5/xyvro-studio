@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Xyvro Entertainment | Official Studio Site</title>
-    <meta name="description" content="Official website of Xyvro Entertainment. Under the leadership of CEO Aryan Pandey, we create high-fidelity mascot horror like 'The Lost Signal'.">
-    <meta name="author" content="Aryan Pandey">
-    
+    <title>Xyvro Entertainment | Official Studio</title>
+    <meta name="description" content="Official home of Xyvro Entertainment. CEO Aryan Pandey leads the development of next-gen mascot horror including 'The Lost Signal'.">
     <link rel="icon" type="image/jpeg" href="https://i.ibb.co/27MM7b66/Gemini-Generated-Image-s6g61ss6g61ss6g6-1.jpg">
     <link rel="canonical" href="https://xyvroentertainment.vercel.app/" />
-    <meta name="google-site-verification" content="googlef68a626d69d3af43.html" />
 
     <script type="application/ld+json">
     {
@@ -19,20 +16,10 @@
       "name": "Xyvro Entertainment",
       "url": "https://xyvroentertainment.vercel.app/",
       "logo": "https://i.ibb.co/27MM7b66/Gemini-Generated-Image-s6g61ss6g61ss6g6-1.jpg",
-      "image": "https://i.ibb.co/Wv01j8Tk/Gemini-Generated-Image-s6g61ss6g61ss6g6-1.jpg",
-      "description": "Indie game studio specializing in high-performance mascot horror.",
       "founder": {
         "@type": "Person",
         "name": "Aryan Pandey",
-        "jobTitle": "CEO & Founder",
-        "sameAs": [
-          "https://www.youtube.com/@xyvro_entertainment",
-          "https://x.com/wager81039"
-        ]
-      },
-      "brand": {
-        "@type": "Brand",
-        "name": "The Lost Signal"
+        "jobTitle": "CEO & Founder"
       }
     }
     </script>
@@ -42,82 +29,118 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Inter:wght@300;400;700&display=swap');
-        :root { --primary-red: #ce1212; --dark-bg: #050505; }
-        body { background-color: var(--dark-bg); color: #ffffff; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        .title-font { font-family: 'Syncopate', sans-serif; }
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
         
-        /* High-End Cinematic Banner */
-        .hero-banner { 
-            background: linear-gradient(rgba(0,0,0,0.85), rgba(5,5,5,1)), url('https://i.ibb.co/Wv01j8Tk/Gemini-Generated-Image-s6g61ss6g61ss6g6-1.jpg'); 
-            background-size: cover; background-position: center; height: 90vh; 
+        :root { --primary-red: #ff0000; --deep-black: #000000; --studio-gray: #1a1a1a; }
+        
+        body { 
+            background-color: var(--deep-black); 
+            color: #ffffff; 
+            font-family: 'Montserrat', sans-serif; 
+            overflow-x: hidden;
         }
 
-        /* Glassmorphism Navbar */
-        .nav-glass { background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.05); }
+        /* Mob-Style Hero: Massive, moody, and vignetted */
+        .hero-section {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), 
+                        url('https://i.ibb.co/Wv01j8Tk/Gemini-Generated-Image-s6g61ss6g61ss6g6-1.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: inset 0 0 150px #000;
+        }
+
+        /* Split Cards (Inspired by Mob's Production/Shop blocks) */
+        .grid-card {
+            background: var(--studio-gray);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid transparent;
+        }
+        .grid-card:hover {
+            border-color: var(--primary-red);
+            transform: scale(1.02);
+            box-shadow: 0 0 40px rgba(255, 0, 0, 0.2);
+        }
+
+        /* Custom Navigation Blur */
+        .nav-blur {
+            background: rgba(0,0,0,0.8);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .text-glow { text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
+        .red-btn {
+            background: var(--primary-red);
+            transition: 0.3s;
+            clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+        }
+        .red-btn:hover { background: #cc0000; letter-spacing: 2px; }
     </style>
 </head>
 <body>
 
-    <nav class="fixed top-0 w-full z-50 p-6 flex justify-between items-center nav-glass">
-        <div class="flex items-center gap-4">
-            <div class="w-11 h-11 rounded-full overflow-hidden border-2 border-red-600 shadow-[0_0_20px_rgba(206,18,18,0.4)]">
-                <img src="https://i.ibb.co/27MM7b66/Gemini-Generated-Image-s6g61ss6g61ss6g6-1.jpg" alt="Xyvro Logo" class="w-full h-full object-cover">
-            </div>
-            <div class="title-font font-bold text-lg uppercase tracking-tighter">XYVRO <span class="text-red-600">ENTERTAINMENT</span></div>
+    <nav class="fixed top-0 w-full z-50 p-5 flex justify-between items-center nav-blur">
+        <div class="flex items-center gap-3">
+            <img src="https://i.ibb.co/27MM7b66/Gemini-Generated-Image-s6g61ss6g61ss6g6-1.jpg" alt="Logo" class="w-10 h-10 rounded-sm">
+            <span class="font-black text-xl tracking-tighter uppercase">XYVRO <span class="text-red-600">ENT.</span></span>
         </div>
-        <div class="hidden md:flex gap-10 text-[9px] uppercase tracking-[0.4em] font-bold">
-            <a href="#home" class="hover:text-red-600 transition">Portal</a>
-            <a href="#production" class="hover:text-red-600 transition">Production</a>
-            <a href="#ceo" class="hover:text-red-600 transition">Leadership</a>
+        <div class="hidden md:flex gap-8 text-xs font-bold uppercase tracking-widest">
+            <a href="#games" class="hover:text-red-600 transition">Our Games</a>
+            <a href="#about" class="hover:text-red-600 transition">Production</a>
+            <a href="#career" class="hover:text-red-600 transition">Studio</a>
         </div>
     </nav>
 
-    <section id="home" class="hero-banner flex items-center justify-center text-center px-10">
-        <div data-aos="fade-up" data-aos-duration="2000">
-            <h1 class="title-font text-5xl md:text-9xl font-bold uppercase tracking-tighter mb-4">THE SIGNAL</h1>
-            <p class="text-red-600 title-font text-[10px] tracking-[0.8em] font-bold uppercase mb-12">CEO Aryan Pandey | Production 2026</p>
-            <a href="#production" class="border border-red-600/30 bg-red-600/5 px-12 py-5 uppercase text-[10px] tracking-[0.3em] font-bold hover:bg-red-600 transition duration-500">Access Archive</a>
+    <section class="hero-section">
+        <div class="text-center" data-aos="zoom-in" data-aos-duration="1500">
+            <h1 class="text-6xl md:text-9xl font-black italic tracking-tighter mb-4 text-glow">THE LOST SIGNAL</h1>
+            <p class="text-lg md:text-2xl font-bold uppercase tracking-[0.5em] text-red-600 mb-10">Chapter 1 Out Soon</p>
+            <button class="red-btn px-16 py-4 font-black text-black">WATCH TRAILER</button>
         </div>
     </section>
 
-    <section id="production" class="py-32 px-6 bg-black">
-        <div class="max-w-7xl mx-auto">
-            <div class="mb-20" data-aos="fade-right">
-                <h2 class="title-font text-4xl uppercase mb-4">Current <span class="text-red-600">IP</span></h2>
-                <p class="text-zinc-600 text-[10px] uppercase tracking-widest font-bold">The Lost Signal: Chapter 1</p>
-            </div>
-            <div class="bg-[#0a0a0a] border border-white/5 overflow-hidden">
-                <div class="grid md:grid-cols-2">
-                    <div class="h-96 md:h-auto overflow-hidden">
-                        <img src="https://i.ibb.co/Wv01j8Tk/Gemini-Generated-Image-s6g61ss6g61ss6g6-1.jpg" alt="The Lost Signal" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-1000">
-                    </div>
-                    <div class="p-12 flex flex-col justify-center">
-                        <h3 class="title-font text-3xl mb-6 uppercase">The Lost Signal</h3>
-                        <p class="text-zinc-400 text-sm leading-relaxed mb-8">Developed under the vision of CEO Aryan Pandey, this experience redefines high-fidelity mascot horror for low-performance systems.</p>
-                        <div class="flex gap-8">
-                            <div class="text-center">
-                                <p class="text-white text-lg font-bold title-font">PC/APK</p>
-                                <p class="text-zinc-600 text-[9px] uppercase font-bold tracking-widest">Platform</p>
-                            </div>
-                            <div class="text-center">
-                                <p class="text-white text-lg font-bold title-font">ACTIVE</p>
-                                <p class="text-zinc-600 text-[9px] uppercase font-bold tracking-widest">Status</p>
-                            </div>
-                        </div>
-                    </div>
+    <section id="games" class="py-20 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10">
+            
+            <div class="grid-card relative overflow-hidden group rounded-lg" data-aos="fade-up">
+                <img src="https://i.ibb.co/Wv01j8Tk/Gemini-Generated-Image-s6g61ss6g61ss6g6-1.jpg" class="w-full h-80 object-cover opacity-60 group-hover:opacity-100 transition duration-700">
+                <div class="p-8 absolute bottom-0 bg-gradient-to-t from-black w-full">
+                    <h2 class="text-3xl font-black mb-2 uppercase italic">Production</h2>
+                    <p class="text-zinc-400 text-sm mb-4">Original psychological horror built by Aryan Pandey.</p>
+                    <span class="text-red-600 text-xs font-bold tracking-widest uppercase">Explore Projects →</span>
                 </div>
             </div>
+
+            <div class="grid-card relative overflow-hidden group rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                <div class="p-8 h-80 flex flex-col justify-center">
+                    <h2 class="text-3xl font-black mb-2 uppercase italic">The Studio</h2>
+                    <p class="text-zinc-400 text-sm mb-6 leading-relaxed">
+                        Xyvro Entertainment is an independent studio focused on high-performance gaming. 
+                        Under CEO **Aryan Pandey**, we prioritize atmospheric storytelling and technical optimization.
+                    </p>
+                    <button class="border border-white/20 hover:border-red-600 px-8 py-3 text-xs font-bold uppercase w-max transition">Learn More</button>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <footer id="ceo" class="p-20 border-t border-white/5 text-center">
-        <div class="flex justify-center gap-16 mb-12">
-            <a href="https://www.youtube.com/@xyvro_entertainment" class="text-zinc-600 hover:text-red-600 text-3xl transition"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://x.com/wager81039" class="text-zinc-600 hover:text-red-600 text-3xl transition"><i class="fa-brands fa-x-twitter"></i></a>
+    <footer class="py-20 bg-[#050505] border-t border-white/5 text-center">
+        <div class="mb-10">
+            <h3 class="text-4xl font-black italic tracking-tighter uppercase mb-2">XYVRO <span class="text-red-600">ENTERTAINMENT</span></h3>
+            <p class="text-zinc-600 text-[10px] tracking-[0.4em] font-bold">EXECUTIVE: ARYAN PANDEY</p>
         </div>
-        <p class="title-font text-[9px] uppercase tracking-[0.8em] text-zinc-800 font-bold mb-4">XYVRO ENTERTAINMENT | CEO: ARYAN PANDEY</p>
-        <p class="text-zinc-500 text-[10px] uppercase">All assets and story logic reserved 2026.</p>
+        
+        <div class="flex justify-center gap-10 mb-10 text-2xl">
+            <a href="https://www.youtube.com/@xyvro_entertainment" class="hover:text-red-600 transition"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://x.com/wager81039" class="hover:text-red-600 transition"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+
+        <p class="text-zinc-700 text-[9px] uppercase font-bold">&copy; 2026 Xyvro Entertainment. All Rights Reserved.</p>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -125,18 +148,3 @@
 
 </body>
 </html>
-
-/* const express = require('express');
-const app = express();
-const path = require('path');
-
-app.use(express.static('public'));
-
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
-});
-
-app.listen(3000, () => {
-    console.log('Xyvro Entertainment Server active on port 3000');
-});
-*/

@@ -4,23 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Xyvro Entertainment | Official Studio</title>
-    <meta name="description" content="Official home of Xyvro Entertainment. CEO Aryan Pandey leads the development of next-gen mascot horror including 'The Lost Signal'.">
+    <title>Xyvro Entertainment | Official Studio Website</title>
+    <meta name="description" content="Xyvro Entertainment is a premier independent game studio founded by CEO Aryan Pandey. Developers of 'The Lost Signal' and pioneers of Optimized Fear.">
+    <meta name="author" content="Aryan Pandey">
+    
     <link rel="icon" type="image/jpeg" href="https://i.ibb.co/27MM7b66/Gemini-Generated-Image-s6g61ss6g61ss6g6-1.jpg">
-    <link rel="canonical" href="https://xyvroentertainment.vercel.app/" />
+    <link rel="apple-touch-icon" href="https://i.ibb.co/27MM7b66/Gemini-Generated-Image-s6g61ss6g61ss6g6-1.jpg">
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Xyvro Entertainment",
+      "alternateName": "Xyvro Ent.",
       "url": "https://xyvroentertainment.vercel.app/",
       "logo": "https://i.ibb.co/27MM7b66/Gemini-Generated-Image-s6g61ss6g61ss6g6-1.jpg",
       "founder": {
         "@type": "Person",
         "name": "Aryan Pandey",
-        "jobTitle": "CEO & Founder"
-      }
+        "jobTitle": "CEO & Founder",
+        "description": "Aryan Pandey is the CEO of Xyvro Entertainment, a specialized studio focusing on high-performance mascot horror and narrative-driven gaming experiences."
+      },
+      "knowsAbout": ["Game Development", "3D Modeling", "Software Engineering", "Horror Genre"],
+      "sameAs": [
+        "https://www.youtube.com/@xyvro_entertainment",
+        "https://x.com/wager81039"
+      ]
     }
     </script>
 
@@ -30,162 +39,165 @@
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
-        :root { --primary-red: #ff0000; --deep-black: #000000; --studio-gray: #0a0a0a; }
-        body { background-color: var(--deep-black); color: #ffffff; font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; }
+        :root { --primary-red: #ff0000; --deep-black: #050505; --pure-black: #000000; }
+        body { background-color: var(--pure-black); color: #ffffff; font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; overflow-x: hidden; }
         
-        /* Hero Styling */
+        /* Glassmorphism Nav */
+        nav { background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(15px); border-bottom: 1px solid rgba(255,255,255,0.05); }
+
+        /* Modern Hero with Parallax Feel */
         .hero-section {
             height: 100vh;
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.9)), url('https://i.ibb.co/Wv01j8Tk/Gemini-Generated-Image-s6g61ss6g61ss6g6-1.jpg');
+            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,1)), url('https://i.ibb.co/Wv01j8Tk/Gemini-Generated-Image-s6g61ss6g61ss6g6-1.jpg');
             background-size: cover; background-position: center;
             display: flex; align-items: center; justify-content: center;
         }
 
-        /* Red Bull Clause Styling: Sharp, angled buttons */
         .red-btn {
             background: var(--primary-red);
-            clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
-            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
-        .red-btn:hover { transform: scale(1.05); letter-spacing: 1px; box-shadow: 0 0 20px rgba(255,0,0,0.4); }
+        .red-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(255,0,0,0.5); filter: brightness(1.2); }
 
-        /* Legal Modal */
-        .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); overflow-y: auto; }
-        .modal-content { background: #111; margin: 5% auto; padding: 40px; border: 1px solid #333; width: 80%; max-width: 900px; border-radius: 4px; }
-        .close-modal { color: #555; float: right; font-size: 28px; cursor: pointer; }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #000; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #ff0000; }
+
+        /* Legal Modals */
+        .modal { display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.98); overflow-y: auto; }
+        .modal-content { background: #0a0a0a; margin: 5% auto; padding: 50px; border: 1px solid #222; width: 85%; max-width: 1000px; position: relative; }
+        .close-modal { position: absolute; right: 30px; top: 20px; color: #555; font-size: 40px; cursor: pointer; transition: 0.3s; }
         .close-modal:hover { color: #ff0000; }
-        .legal-text h4 { color: #ff0000; margin-top: 20px; text-transform: uppercase; font-weight: 900; }
-        .legal-text p, .legal-text li { font-size: 0.9em; color: #bbb; line-height: 1.6; margin-bottom: 10px; }
     </style>
 </head>
 <body>
 
-    <nav class="fixed top-0 w-full z-50 p-5 flex justify-between items-center bg-black/80 backdrop-blur-lg">
-        <div class="flex items-center gap-3">
-            <img src="https://i.ibb.co/27MM7b66/Gemini-Generated-Image-s6g61ss6g61ss6g6-1.jpg" alt="Logo" class="w-10 h-10">
-            <span class="font-black text-xl italic tracking-tighter">XYVRO <span class="text-red-600">ENT.</span></span>
+    <nav class="fixed top-0 w-full z-50 px-8 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-4">
+            <img src="https://i.ibb.co/27MM7b66/Gemini-Generated-Image-s6g61ss6g61ss6g6-1.jpg" alt="Xyvro Logo" class="w-12 h-12 rounded-sm border border-white/10">
+            <div class="flex flex-col">
+                <span class="font-black text-2xl italic tracking-tighter leading-none">XYVRO</span>
+                <span class="text-[10px] text-red-600 font-bold tracking-[0.4em] uppercase">Entertainment</span>
+            </div>
         </div>
-        <div class="hidden md:flex gap-8 text-[10px] font-bold uppercase tracking-[0.3em]">
-            <a href="#games" class="hover:text-red-600 transition">Production</a>
-            <a href="#studio" class="hover:text-red-600 transition">Studio</a>
-            <a href="#social" class="hover:text-red-600 transition">Connect</a>
+        <div class="hidden md:flex gap-10 text-[11px] font-black uppercase tracking-[0.2em]">
+            <a href="#games" class="hover:text-red-600 transition-all duration-300 underline-offset-8 hover:underline">Projects</a>
+            <a href="#studio" class="hover:text-red-600 transition-all duration-300 underline-offset-8 hover:underline">Executive</a>
+            <a href="#contact" class="hover:text-red-600 transition-all duration-300 underline-offset-8 hover:underline">Contact</a>
         </div>
     </nav>
 
-    <section class="hero-section">
-        <div class="text-center" data-aos="fade-up">
-            <h1 class="text-6xl md:text-9xl font-black italic tracking-tighter mb-4">THE LOST SIGNAL</h1>
-            <p class="text-red-600 text-sm font-black tracking-[0.6em] uppercase mb-10">A Transmission by Aryan Pandey</p>
-            <a href="https://www.youtube.com/@xyvro_entertainment" target="_blank" class="red-btn px-12 py-4 font-black text-black inline-block">WATCH TEASER</a>
+    <section class="hero-section relative">
+        <div class="text-center px-4" data-aos="zoom-out" data-aos-duration="1500">
+            <h1 class="text-7xl md:text-[10rem] font-black italic tracking-tighter mb-2 opacity-90">THE LOST SIGNAL</h1>
+            <div class="h-1 w-24 bg-red-600 mx-auto mb-6"></div>
+            <p class="text-white/60 text-xs md:text-sm font-bold tracking-[0.8em] uppercase mb-12">A Masterclass in Optimized Horror</p>
+            <a href="https://www.youtube.com/@xyvro_entertainment" target="_blank" class="red-btn px-16 py-5 font-black text-black text-sm uppercase inline-block">Execute Transmission</a>
         </div>
     </section>
 
-    <section id="studio" class="py-24 bg-[#050505] px-6">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+    <section id="studio" class="py-32 bg-[#050505] relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-20 items-center">
             <div data-aos="fade-right">
-                <h2 class="text-5xl font-black italic uppercase mb-6">The <span class="text-red-600">Studio</span></h2>
-                <p class="text-zinc-400 leading-relaxed mb-8">
-                    Founded by <strong>CEO Aryan Pandey</strong>, Xyvro Entertainment is built on the philosophy of "Optimized Fear." We specialize in high-fidelity mascot horror specifically engineered to run on hardware where other engines fail. Our mission is to ensure that deep, psychological storytelling is accessible to everyone, regardless of their system specs.
-                </p>
-                <button onclick="scrollToSection('social')" class="border border-white/20 px-8 py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-white hover:text-black transition">Learn More</button>
+                <p class="text-red-600 font-black tracking-widest uppercase text-xs mb-4">Leadership & Vision</p>
+                <h2 class="text-6xl font-black italic uppercase mb-8">Aryan <span class="text-white/20">Pandey</span></h2>
+                <div class="space-y-6 text-zinc-400 text-lg leading-relaxed">
+                    <p>
+                        As the <span class="text-white font-bold">CEO of Xyvro Entertainment</span>, Aryan Pandey spearheads the development of high-fidelity gaming experiences designed for the next generation of hardware accessibility.
+                    </p>
+                    <p>
+                        Our studio specializes in the "Developmental Bottleneck" theory of horror—creating atmospheric tension through deep psychological storytelling and specialized 3D optimization for low-end systems.
+                    </p>
+                </div>
+                <div class="mt-12 flex gap-6">
+                    <div class="border-l-2 border-red-600 pl-4">
+                        <h4 class="text-white font-black uppercase">99.5%</h4>
+                        <p class="text-xs text-zinc-500 uppercase font-bold">Precision Logic</p>
+                    </div>
+                    <div class="border-l-2 border-red-600 pl-4">
+                        <h4 class="text-white font-black uppercase">i3-Ready</h4>
+                        <p class="text-xs text-zinc-500 uppercase font-bold">Optimization</p>
+                    </div>
+                </div>
             </div>
-            <div class="rounded-lg border border-white/5 overflow-hidden" data-aos="zoom-in">
-                <img src="https://i.ibb.co/Wv01j8Tk/Gemini-Generated-Image-s6g61ss6g61ss6g6-1.jpg" alt="Studio" class="opacity-80">
-            </div>
-        </div>
-    </section>
-
-    <section id="social" class="py-24 bg-black px-6 border-t border-white/5">
-        <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-3xl font-black italic uppercase mb-12">Join the <span class="text-red-600">Signal</span></h2>
-            <div class="flex justify-center gap-12">
-                <a href="https://www.youtube.com/@xyvro_entertainment" target="_blank" class="group">
-                    <i class="fa-brands fa-youtube text-5xl text-zinc-700 group-hover:text-red-600 transition"></i>
-                    <p class="text-[9px] font-bold uppercase tracking-widest mt-4">YouTube</p>
-                </a>
-                <a href="https://x.com/wager81039" target="_blank" class="group">
-                    <i class="fa-brands fa-x-twitter text-5xl text-zinc-700 group-hover:text-red-600 transition"></i>
-                    <p class="text-[9px] font-bold uppercase tracking-widest mt-4">Twitter</p>
-                </a>
-                <a href="mailto:wagervisualsff@gmail.com" class="group">
-                    <i class="fa-solid fa-envelope text-5xl text-zinc-700 group-hover:text-white transition"></i>
-                    <p class="text-[9px] font-bold uppercase tracking-widest mt-4">Contact</p>
-                </a>
+            <div class="relative group" data-aos="fade-left">
+                <div class="absolute -inset-1 bg-red-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                <div class="relative rounded-lg border border-white/10 overflow-hidden bg-black">
+                    <img src="https://i.ibb.co/Wv01j8Tk/Gemini-Generated-Image-s6g61ss6g61ss6g6-1.jpg" alt="Xyvro Executive" class="grayscale hover:grayscale-0 transition duration-700">
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-20 bg-[#050505] text-center border-t border-white/5">
-        <p class="font-black italic text-2xl mb-8 uppercase">XYVRO <span class="text-red-600">ENTERTAINMENT</span></p>
-        <div class="flex flex-wrap justify-center gap-6 mb-10 text-[9px] font-bold uppercase tracking-widest text-zinc-500">
-            <button onclick="openModal('privacyModal')" class="hover:text-white transition">Privacy Policy</button>
-            <button onclick="openModal('termsModal')" class="hover:text-white transition">Terms of Service</button>
-            <button onclick="openModal('fanModal')" class="hover:text-white transition">Fan Content Policy</button>
+    <section id="contact" class="py-32 bg-black">
+        <div class="max-w-7xl mx-auto px-8 text-center">
+            <h2 class="text-4xl font-black italic uppercase mb-16 tracking-widest">Global <span class="text-red-600">Access</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <a href="https://www.youtube.com/@xyvro_entertainment" target="_blank" class="p-12 border border-white/5 hover:border-red-600/50 transition-all bg-[#0a0a0a]">
+                    <i class="fa-brands fa-youtube text-4xl text-red-600 mb-6"></i>
+                    <h3 class="font-black uppercase tracking-widest">Broadcasting</h3>
+                    <p class="text-xs text-zinc-500 mt-2">Latest Teasers & OSTs</p>
+                </a>
+                <a href="https://x.com/wager81039" target="_blank" class="p-12 border border-white/5 hover:border-red-600/50 transition-all bg-[#0a0a0a]">
+                    <i class="fa-brands fa-x-twitter text-4xl text-white mb-6"></i>
+                    <h3 class="font-black uppercase tracking-widest">Intelligence</h3>
+                    <p class="text-xs text-zinc-500 mt-2">Daily Studio Updates</p>
+                </a>
+                <a href="mailto:wagervisualsff@gmail.com" class="p-12 border border-white/5 hover:border-red-600/50 transition-all bg-[#0a0a0a]">
+                    <i class="fa-solid fa-envelope text-4xl text-zinc-600 mb-6"></i>
+                    <h3 class="font-black uppercase tracking-widest">Inquiries</h3>
+                    <p class="text-xs text-zinc-500 mt-2">Business & Licensing</p>
+                </a>
+            </div>
         </div>
-        <p class="text-[9px] text-zinc-700 uppercase font-black">&copy; 2026 Xyvro Entertainment. Executive: Aryan Pandey.</p>
+    </section>
+
+    <footer class="py-20 bg-black text-center border-t border-white/5">
+        <div class="mb-10">
+            <span class="font-black italic text-3xl uppercase tracking-tighter">XYVRO <span class="text-red-600">ENT.</span></span>
+        </div>
+        <div class="flex flex-wrap justify-center gap-8 mb-12 text-[10px] font-black uppercase tracking-[0.3em] text-zinc-500">
+            <button onclick="openModal('privacyModal')" class="hover:text-red-600 transition">Privacy</button>
+            <button onclick="openModal('termsModal')" class="hover:text-red-600 transition">Terms</button>
+            <button onclick="openModal('fanModal')" class="hover:text-red-600 transition">Fan Content</button>
+        </div>
+        <p class="text-[10px] text-zinc-800 uppercase font-black tracking-widest">
+            &copy; 2026 Xyvro Entertainment. Executive Officer: Aryan Pandey. All Rights Reserved.
+        </p>
     </footer>
 
     <div id="privacyModal" class="modal">
         <div class="modal-content">
             <span class="close-modal" onclick="closeModal('privacyModal')">&times;</span>
             <div class="legal-text">
-                <h2 class="text-3xl font-black mb-6">PRIVACY <span class="text-red-600">POLICY</span></h2>
-                <p><strong>Effective Date: March 2026</strong></p>
-                <h4>1. DATA COLLECTION & SCOPE</h4>
-                <p>Xyvro Entertainment ("Xyvro," "we," "us") collects minimal technical data required for game optimization. This includes hardware IDs, performance logs (CPU/GPU utilization), and crash reports. We do not sell, rent, or trade your personal identification information to third parties.</p>
-                <h4>2. USER HARDWARE DATA</h4>
-                <p>To provide a high-fidelity experience on low-spec systems, our software analyzes system capabilities. This data is processed locally and is only transmitted to Xyvro in the event of an application failure (crash) to improve stability for the i3-series and equivalent hardware.</p>
-                <h4>3. CONTACT DATA</h4>
-                <p>Information provided via <strong>wagervisualsff@gmail.com</strong> is used solely for communication regarding support, press, or business inquiries and is protected under industry-standard encryption protocols.</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="termsModal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal" onclick="closeModal('termsModal')">&times;</span>
-            <div class="legal-text">
-                <h2 class="text-3xl font-black mb-6">TERMS <span class="text-red-600">OF SERVICE</span></h2>
-                <h4>1. INTELLECTUAL PROPERTY</h4>
-                <p>All characters (including "Penny the Proctor"), story arcs, codebases, and visual assets associated with "The Lost Signal" are the exclusive property of Xyvro Entertainment. Unauthorized extraction, reverse engineering, or redistribution of .exe or .apk binaries is strictly prohibited and will be prosecuted under global copyright law.</p>
-                <h4>2. LIMITATION OF LIABILITY</h4>
-                <p>Xyvro Entertainment provides software "as-is." We are not responsible for any system damage, data loss, or emotional distress resulting from gameplay. Users acknowledge that mascot horror contains intense themes and jumpscares.</p>
-                <h4>3. THE "RED BULL" CLAUSE</h4>
-                <p>Any promotional language used (e.g., "Optimized Fear") is intended as a stylistic and artistic description of the game's atmosphere and performance. It does not constitute a literal medical or mechanical guarantee of performance metrics beyond those provided in official system requirements.</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="fanModal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal" onclick="closeModal('fanModal')">&times;</span>
-            <div class="legal-text">
-                <h2 class="text-3xl font-black mb-6">FAN CONTENT <span class="text-red-600">POLICY</span></h2>
-                <p>Xyvro Entertainment encourages fan creativity. To stay protected, creators must follow these non-negotiable rules:</p>
-                <ul>
-                    <li><strong>NON-COMMERCIAL:</strong> You may not sell merchandise or software featuring Xyvro characters without a written license.</li>
-                    <li><strong>MONETIZATION:</strong> YouTube/Twitch monetization is permitted <em>only</em> if clear credit is given in the video description.</li>
-                    <li><strong>TRADEMARKS:</strong> You may not remove the Xyvro Entertainment logo or "The Lost Signal" watermark from official assets used in your content.</li>
-                    <li><strong>ATTRIBUTION:</strong> All fan-made content must state: <em>"Based on 'The Lost Signal' by Xyvro Entertainment. All characters property of Xyvro Entertainment."</em></li>
-                </ul>
+                <h2 class="text-5xl font-black italic mb-8 uppercase tracking-tighter">Privacy <span class="text-red-600">Policy</span></h2>
+                <p class="text-red-600 font-bold mb-6 italic">REVISED: MARCH 2026</p>
+                <div class="space-y-8 text-zinc-400 leading-relaxed uppercase text-sm font-bold">
+                    <p>1. Hardware Identification: To maintain optimization, we collect hardware performance metrics. No personal identifiers are stored.</p>
+                    <p>2. Security: Communications to wagervisualsff@gmail.com are encrypted and managed by executive staff only.</p>
+                </div>
             </div>
         </div>
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({ duration: 1000, once: true });
 
-        // Smooth Scroll Function
-        function scrollToSection(id) {
-            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        function openModal(id) { 
+            document.getElementById(id).style.display = "block"; 
+            document.body.style.overflow = "hidden"; 
         }
-
-        // Modal Logic
-        function openModal(id) { document.getElementById(id).style.display = "block"; document.body.style.overflow = "hidden"; }
-        function closeModal(id) { document.getElementById(id).style.display = "none"; document.body.style.overflow = "auto"; }
+        function closeModal(id) { 
+            document.getElementById(id).style.display = "none"; 
+            document.body.style.overflow = "auto"; 
+        }
         
-        // Close modal if clicking outside content
         window.onclick = function(event) {
             if (event.target.className === 'modal') {
                 event.target.style.display = "none";

@@ -3,82 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AATOY - Secure Made in India</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    
+    <title>Xyvro Entertainment | Independent Game Studio & Digital Media</title>
+    <meta name="description" content="Xyvro Entertainment: Developers of 'The Lost Signal'. A cutting-edge independent studio specializing in psychological horror and high-performance digital media.">
+    
+    <link rel="icon" type="image/png" href="https://img.icons8.com/ios-filled/50/ffffff/ghost.png">
+
+    <script src="https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js"></script>
+
+    <style>
+        :root { 
+            --gold: #c5a059;
+            --dark-bg: #0a0a0a;
+            --card-bg: #141414;
+            --text-gray: #a0a0a0;
+            --white: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', 'Segoe UI', sans-serif; background: var(--dark-bg); color: var(--white); overflow-x: hidden; }
+
+        /* HERO SECTION */
+        header {
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle, #1a1a1a 0%, #0a0a0a 100%);
+            text-align: center;
+            border-bottom: 2px solid var(--gold);
+        }
+
+        .studio-logo {
+            font-size: clamp(3rem, 10vw, 5rem);
+            font-weight: 800;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: var(--white);
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(197, 160, 89, 0.4);
+        }
+
+        .tagline {
+            font-size: 0.9rem;
+            color: var(--gold);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        /* VIEW COUNTER BADGE */
+        .engagement-badge {
+            margin-top: 30px;
+            background: rgba(197, 160, 89, 0.1);
+            border: 1px solid var(--gold);
+            padding: 8px 20px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--gold);
+        }
+
+        /* CONTENT SECTION */
+        .container { max-width: 1000px; margin: auto; padding: 60px 20px; }
+        
+        .section-title { font-size: 1.5rem; margin-bottom: 40px; border-left: 4px solid var(--gold); padding-left: 15px; }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            border: 1px solid #222;
+        }
+
+        .project-card:hover { transform: translateY(-5px); border-color: var(--gold); }
+        .project-card h3 { margin-bottom: 10px; color: var(--gold); }
+        .project-card p { font-size: 0.9rem; color: var(--text-gray); line-height: 1.6; }
+
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            border-top: 1px solid #1a1a1a;
+            font-size: 0.8rem;
+            color: var(--text-gray);
+        }
+
+        .social-links { margin-top: 20px; }
+        .social-links a { color: var(--gold); margin: 0 10px; text-decoration: none; font-weight: 600; }
+    </style>
 </head>
 <body>
 
-    <div id="splash">
-        <h1 class="splash-logo">AATOY</h1>
-        <p class="made-tag">Made in India 🇮🇳</p>
-    </div>
+    <header>
+        <h1 class="studio-logo">XYVRO</h1>
+        <p class="tagline">ENTERTAINMENT</p>
+        
+        <div class="engagement-badge">
+            <span id="visit-count">...</span>
+            <span style="opacity: 0.6;">NETWORK ENCOUNTERS</span>
+        </div>
+    </header>
 
-    <div id="auth-screen" class="hidden">
-        <div class="auth-box">
-            <h1 class="brand">AATOY</h1>
-            <p>Claim your unique ID & Password</p>
-            <input type="text" id="usernameInput" placeholder="Username">
-            <input type="password" id="passwordInput" placeholder="Password">
-            <button id="loginBtn" onclick="handleSecureLogin()">Login / Sign Up</button>
-            <p id="auth-error"></p>
+    <div class="container">
+        <h2 class="section-title">CURRENT PROJECTS</h2>
+        
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>The Lost Signal</h3>
+                <p>A deep-dive into psychological mascot horror. Built on mobile-optimized 3D drafting for a seamless, terrifying experience on any hardware.</p>
+            </div>
+            
+            <div class="project-card">
+                <h3>Digital Solutions</h3>
+                <p>Providing high-end web development, SEO, and Local Knowledge Panel architecture for businesses requiring professional digital growth.</p>
+            </div>
+        </div>
+
+        <div style="margin-top: 60px; text-align: center;">
+            <p style="color: var(--text-gray); font-style: italic;">"Pushing the boundaries of independent creation from Dehradun to the world."</p>
         </div>
     </div>
 
-    <div id="app" class="hidden">
-        <header class="navbar">
-            <h2 class="brand">AATOY</h2>
-            <div class="header-actions">
-                <input type="text" id="userSearch" placeholder="Search..." onkeyup="searchUsers()">
-                <button class="icon-btn" onclick="toggleTheme()">🌓</button>
-            </div>
-        </header>
-
-        <main id="home-page" class="page">
-            <div id="feed-container"></div>
-        </main>
-
-        <main id="profile-page" class="page hidden">
-            <div class="profile-header">
-                <div class="profile-avatar"></div>
-                <div class="profile-stats">
-                    <h3 id="display-name">User</h3>
-                    <p id="unique-tag">@username</p>
-                    
-                    <div class="view-counter" style="margin: 10px 0; font-size: 0.9rem; color: #888;">
-                        👁️ <span id="visit-count">0</span> Total App Visits
-                    </div>
-
-                    <button class="edit-btn" onclick="logout()">Logout</button>
-                </div>
-            </div>
-            <div class="profile-grid" id="profile-grid-container"></div>
-        </main>
-
-        <nav class="bottom-nav">
-            <button class="nav-item" onclick="switchPage('home-page')">🏠</button>
-            <button class="nav-item main-btn" onclick="addPost()">+</button>
-            <button class="nav-item" onclick="switchPage('profile-page')">👤</button>
-        </nav>
-    </div>
+    <footer>
+        <p>© 2026 XYVRO ENTERTAINMENT | FOUNDED BY ARYAN PANDEY</p>
+        <div class="social-links">
+            <a href="https://www.youtube.com/@xyvro_entertainment">YOUTUBE</a> | 
+            <a href="https://xyvroentertainment.medium.com/">MEDIUM</a> | 
+            <a href="https://x.com/wager81039">TWITTER</a>
+        </div>
+    </footer>
 
     <script>
-        // This function pings the CountAPI to increment and fetch the total views
-        async function updateViewCount() {
-            try {
-                // Replace 'aatoy-app-2026' with any unique name you want
-                const response = await fetch('https://api.countapi.xyz/hit/aatoy-app-2026/visits');
-                const data = await response.json();
-                document.getElementById('visit-count').innerText = data.value.toLocaleString();
-            } catch (error) {
-                console.log("Counter Error:", error);
-            }
-        }
-
-        // Call the counter when the page loads
-        window.addEventListener('load', updateViewCount);
+        document.addEventListener('DOMContentLoaded', function() {
+            // Using a specific key for Xyvro Entertainment tracking
+            const counter = new Counter({ workspace: 'xyvro-studios' });
+            
+            counter.up('xyvro-main-hub')
+                .then(result => {
+                    document.getElementById('visit-count').textContent = result.value.toLocaleString();
+                })
+                .catch(err => {
+                    console.error('Counter API Error:', err);
+                    document.getElementById('visit-count').textContent = "ONLINE";
+                });
+        });
     </script>
-
-    <script src="script.js"></script>
 </body>
 </html>

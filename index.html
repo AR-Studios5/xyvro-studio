@@ -10,6 +10,8 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link class="seo-canonical" rel="canonical" href="https://xyvroentertainment.com/">
     
+    <link rel="icon" type="image/png" href="favicon.png">
+    
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -27,7 +29,7 @@
         "name": "Aryan Pandey",
         "jobTitle": "Founder & Chief Executive Officer"
       },
-      "description": "An optimization-focused studio led by Aryan Pandey, specializing in breaking down high-end application barriers, crafting performant websites, and deploying lightweight game rendering for consumer-grade hardware."
+      "description": "An optimization-focused studio specialized in breaking down high-end application barriers, crafting performant websites, and deploying lightweight game rendering for consumer-grade hardware."
     }
     </script>
 
@@ -41,12 +43,15 @@
 
     <header class="apple-navbar">
         <div class="nav-content-bounds">
-            <a href="#" class="nav-home-logo" onclick="switchStudioView('hero-hub')">Xyvro <span>Entertainment</span></a>
+            <a href="#" class="nav-home-logo" onclick="switchStudioView('hero-hub')">
+                <img src="favicon.png" alt="Xyvro Logo" class="brand-icon" onerror="this.src='logo.png';">
+                Xyvro <span>Entertainment</span>
+            </a>
             <nav class="nav-link-rack">
                 <div class="nav-dropdown">
                     <button class="dropdown-trigger">About</button>
                     <div class="dropdown-menu-box">
-                        <button onclick="switchStudioView('leadership-panel')">Our CEO</button>
+                        <button onclick="switchStudioView('leadership-panel')">Our Team</button>
                         <button onclick="switchStudioView('vault-panel')">Our Vision</button>
                     </div>
                 </div>
@@ -73,24 +78,56 @@
         </section>
 
         <section id="leadership-panel" class="apple-stage-panel">
-            <div class="corporate-profile-grid">
-                <div class="image-showcase-frame">
-                    <img src="placeholder.jpg" alt="Aryan Pandey - CEO and Founder of Xyvro Entertainment" class="corporate-headshot" onerror="this.src='https://via.placeholder.com/600x600/f5f5f7/1d1d1f?text=Aryan+Pandey+CEO'">
-                </div>
-                <div class="profile-narrative-block">
-                    <span class="corporate-badge-label">Executive Leadership</span>
-                    <h2 class="executive-title-heading">Aryan Pandey</h2>
-                    <p class="executive-sub-position">CEO & Founder of Xyvro Entertainment</p>
-                    <p class="executive-paragraph-bio">Overseeing global technical roadmaps, resource orchestration, and systemic middleware development. Spearheading internal initiatives across centralized application software, lightweight network design, and the XyvroAI platform.</p>
+            <div class="equal-team-container">
+                <span class="team-kicker">Xyvro Studios</span>
+                <h2 class="team-main-heading">Meet Our Team</h2>
+                <p class="team-intro-text">We are a passionate team of creators collaborating to break down framework bloat, build highly optimized applications, and design next-generation interactive media loops accessible to everyone.</p>
+                
+                <div class="equal-team-grid">
                     
-                    <div class="corporate-spec-sheet">
-                        <div class="spec-row-item"><span>Current Role</span><strong>Founder & Chief Executive Officer</strong></div>
-                        <div class="spec-row-item"><span>Age Status</span><strong id="calculated-age">Resolving...</strong></div>
-                        <div class="spec-row-item"><span>Primary Objective</span><strong>Democratic Optimization Engineering, Accessible Software Pipelines</strong></div>
+                    <div class="team-member-card">
+                        <div class="circle-profile-frame">
+                            <img src="aryan.jpg" alt="Aryan Pandey" class="circle-profile-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="profile-text-fallback fallback-blue">AP</div>
+                        </div>
+                        <div class="member-meta-block">
+                            <h3>Aryan Pandey</h3>
+                            <p class="member-role">CEO & Founder</p>
+                            <p class="member-bio">Overseeing global technical roadmaps, resource orchestration, and systemic middleware development. Lead architect for our core applications and game loops.</p>
+                            <div class="member-footer-spec">Age: <span id="calculated-age">Resolving...</span></div>
+                        </div>
                     </div>
+
+                    <div class="team-member-card">
+                        <div class="circle-profile-frame">
+                            <img src="malay.jpg" alt="Malay Panwar" class="circle-profile-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="profile-text-fallback fallback-gray">MP</div>
+                        </div>
+                        <div class="member-meta-block">
+                            <h3>Malay Panwar</h3>
+                            <p class="member-role">Lead Beta Tester</p>
+                            <p class="member-bio">Managing production test cycles, locating framework boundaries, evaluating build performance metrics, and ensuring runtime configurations are flawlessly optimized.</p>
+                            <div class="member-footer-spec">Age: <span id="malay-age">Resolving...</span></div>
+                        </div>
+                    </div>
+
+                    <div class="team-member-card">
+                        <div class="circle-profile-frame">
+                            <img src="azoog31.jpg" alt="Azoog31" class="circle-profile-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="profile-text-fallback fallback-dark">AZ</div>
+                        </div>
+                        <div class="member-meta-block">
+                            <h3>Azoog31</h3>
+                            <p class="member-role">Developer</p>
+                            <p class="member-bio">Collaborating on structural file systems, core data layers, and backend module integration for future web utilities and edge application software.</p>
+                            <div class="member-footer-spec">Age: <span id="azoog-age">22 Years Old</span></div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
+
         <section id="hero-ai-tablet" class="apple-stage-panel">
             <div class="dashboard-canvas-bounds">
                 <div class="premium-dashboard-card">
@@ -117,7 +154,6 @@
                         <div class="workspace-scroll-pane">
                             
                             <div id="showcase-featured" class="dashboard-subview active-subview">
-                                
                                 <div class="project-hero-card">
                                     <div class="project-hero-image" style="background-image: url('hero-xyvroai.png'); background-color: #0071e3;"></div>
                                     <div class="project-hero-content">
@@ -188,6 +224,7 @@
                 </div>
             </div>
         </section>
+
         <section id="careers-panel" class="apple-stage-panel">
             <div class="careers-container-bounds">
                 <div class="apple-markdown-presentation-card">
@@ -195,13 +232,9 @@
                         <span class="emoji-heading">📝</span>
                         <h2>JOIN THE XYVRO ENTERTAINMENT TEAM</h2>
                     </div>
-                    
                     <p class="markdown-paragraph">We are officially looking for passionate people from the community to help us grow the brand, moderate the server, and test our new projects!</p>
-                    
                     <p class="markdown-paragraph">Because we are a small team of three, we aren't looking for rigid corporate titles—we just want to know what you are good at. Whether you excel at finding bugs, managing communities, video editing, graphic design, or coding, we want to hear from you!</p>
-                    
                     <hr class="markdown-horizontal-rule">
-                    
                     <div class="markdown-content-section">
                         <h3>⚠️ IMPORTANT DETAILS</h3>
                         <ul class="markdown-bullet-list">
@@ -209,9 +242,7 @@
                             <li><strong>Review Process:</strong> The founders will review applications manually. If your skills match what we need, an administrator will reach out to you directly via Discord DMs.</li>
                         </ul>
                     </div>
-                    
                     <hr class="markdown-horizontal-rule">
-                    
                     <div class="markdown-action-footer">
                         <p class="prompt-text">🚀 <strong>Ready to apply? Click the link below to fill out the form:</strong></p>
                         <a href="https://forms.gle/9T7eBYKc4yEnVnhw8" target="_blank" rel="noopener noreferrer" class="apple-btn apple-btn-primary padded-btn-style">Fill Out Application Form</a>
@@ -224,7 +255,6 @@
             <div class="careers-container-bounds">
                 <h2 class="vision-panel-title">Ecosystem Vision</h2>
                 <p class="vision-panel-subtitle">Our core development philosophy.</p>
-                
                 <div class="apple-editorial-grid">
                     <div class="editorial-card">
                         <h3>Our Mission: Democratizing Technology</h3>
@@ -272,5 +302,3 @@
     <script src="app.js"></script>
 </body>
 </html>
- 
-

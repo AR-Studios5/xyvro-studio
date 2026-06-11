@@ -19,7 +19,7 @@ function switchStudioView(targetPanelId) {
 }
 
 // -------------------------------------------------------------------------
-// SHOWCASE SUB-TAB CONTROLLER
+// COCKPIT SECONDARY SUB-TAB CONTROLLER
 // DESCRIPTION: Controls inside view panels for the Ecosystem Showcase chassis.
 // -------------------------------------------------------------------------
 function switchDashboardTab(buttonElement, targetSubViewId) {
@@ -35,7 +35,6 @@ function switchDashboardTab(buttonElement, targetSubViewId) {
         targetView.classList.add('active-subview');
     }
 
-    // Update Headline based on tab selected
     var headlineDisplay = document.getElementById('dashboard-tab-headline');
     if (targetSubViewId === 'showcase-featured') headlineDisplay.textContent = "Featured Projects";
     if (targetSubViewId === 'showcase-apps') headlineDisplay.textContent = "Web & Applications";
@@ -43,40 +42,49 @@ function switchDashboardTab(buttonElement, targetSubViewId) {
 }
 
 // -------------------------------------------------------------------------
-// SECURE EXECUTIVE AGE CALCULATION ENGINE
-// DESCRIPTION: Handles secure birthday configurations via bit arrays.
+// DYNAMIC AGE RUNTIME COMPILER FOR TEENS
+// DESCRIPTION: Computes precise year differences for custom team specs.
 // -------------------------------------------------------------------------
 (function() {
     "use strict";
-    var bitValidationArray = [2013, 4, 12];
+    
+    // Encapsulated birth indices [Year, Month, Day]
+    var aryanBirth = [2013, 4, 12];
+    var malayBirth = [2013, 4, 12]; // Automatically tracks dynamic metrics at 13
 
-    function evaluateSecureAgeMetric(epochPacket) {
+    function processTemporalAge(epochArray) {
         var clockSource = new Date();
         var sysYear = clockSource.getFullYear();
         var sysMonth = clockSource.getMonth() + 1;
         var sysDay = clockSource.getDate();
 
-        var computedInteger = sysYear - epochPacket[0];
+        var computedAge = sysYear - epochArray[0];
 
-        if (sysMonth < epochPacket[1]) {
-            computedInteger--;
+        if (sysMonth < epochArray[1]) {
+            computedAge--;
         } 
-        else if (sysMonth === epochPacket[1] && sysDay < epochPacket[2]) {
-            computedInteger--;
+        else if (sysMonth === epochArray[1] && sysDay < epochArray[2]) {
+            computedAge--;
         }
 
-        return computedInteger;
+        return computedAge;
     }
 
     document.addEventListener("DOMContentLoaded", function() {
         try {
-            var displayNode = document.getElementById("calculated-age");
-            if (displayNode) {
-                var validatedAge = evaluateSecureAgeMetric(bitValidationArray);
-                displayNode.textContent = validatedAge + " Years Old";
+            // Apply metric to Aryan's tag
+            var aryanNode = document.getElementById("calculated-age");
+            if (aryanNode) {
+                aryanNode.textContent = processTemporalAge(aryanBirth) + " Years Old";
+            }
+
+            // Apply metric to Malay's tag
+            var malayNode = document.getElementById("malay-age");
+            if (malayNode) {
+                malayNode.textContent = processTemporalAge(malayBirth) + " Years Old";
             }
         } catch (faultCatch) {
-            console.warn("[RUNTIME PROXY INTERCEPT] Dynamic timeline calculation exception caught: ", faultCatch);
+            console.warn("[AGE RUNTIME] Matrix array intercept handled safely.");
         }
     });
 })();
